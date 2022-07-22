@@ -49,17 +49,4 @@ abstract contract NonTransferrableBurnableERC721Token is
         );
         super._beforeTokenTransfer(from, to, tokenId);
     }
-
-    function transferFrom(
-        address from,
-        address to,
-        uint256 tokenId
-    ) public virtual override {}
-
-    function safeTransferFrom(
-        address from,
-        address to,
-        uint256 tokenId,
-        bytes memory data
-    ) public virtual override {}
 }
